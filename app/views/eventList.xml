@@ -1,0 +1,8 @@
+<Alloy>
+	<Collection src="webNews"/>
+    <Window id="eventList">
+    	<TableView dataCollection="webNews" dataFilter="filterFunction" onClick="tab2Click">
+			    <TableViewRow title="{name}"/>
+		</TableView>
+    </Window>
+</Alloy>

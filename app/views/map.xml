@@ -1,0 +1,8 @@
+<Alloy>
+	<Collection src="estates" />
+	<Window id="map" >
+    	<Module id="mapViewTwo" module="ti.map" method="createView" userLocation="true" dataCollection="estates" dataFilter="filterFunction" dataTransform="transformFunctionMap">
+    		<Annotation id="now"/>
+    	</Module>
+    </Window>
+</Alloy>

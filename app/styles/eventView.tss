@@ -1,0 +1,9 @@
+
+".container" : {
+  
+}
+
+"#address": {
+    title: "{estate}",
+    autoLink: Titanium.UI.AUTOLINK_PHONE_NUMBERS
+}

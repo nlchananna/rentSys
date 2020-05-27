@@ -1,0 +1,16 @@
+<Alloy>
+	<Collection src="webNews"/>
+    <Window id="eventView">
+    	<RightNavButton platform="ios">
+			<Button title="Like/Dislike" onClick="likeClick"/> 
+    	</RightNavButton>
+    	<TableView dataCollection="webNews" dataFilter="filterFunction">
+    		<TableViewRow layout="vertical" title="test">
+			   <ImageView image="{imageurl}"/>
+			    <Label text="Name: {name}" /> 
+			    <Label text="Rent: {rent}" /> 
+			    <Button title="{estate}" onClick="addressClick"/> 
+			</TableViewRow>
+		</TableView>
+    </Window>
+</Alloy>

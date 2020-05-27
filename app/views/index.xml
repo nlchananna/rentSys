@@ -1,0 +1,49 @@
+<Alloy>
+	<Collection src="webNews"/>
+	<Collection src="estates" />
+	<TabGroup>
+		<Tab title="Tab 1" icon="KS_nav_ui.png">
+			<Window title="Tab 1">
+				<TableView dataCollection="webNews" dataTransform="transformFunction" onClick="tab1Click">
+			    <TableViewRow layout="vertical" house_id="{name}">
+			        <ImageView image="{imageurl}" top="20dp" />
+			        <Label text="{name}" bottom="20dp" /> 
+			    </TableViewRow>
+			</TableView>
+			</Window>
+		</Tab>
+		<Tab title="Tab 2" icon="KS_nav_views.png">
+			<Window title="Tab 2">
+				<TableView onClick="tab2Click"> 
+				    <TableViewSection headerTitle="$15000 -" rent_id="below">
+				        <TableViewRow title="2 bedrooms -" room_id="2room"/> 
+				        <TableViewRow title="3 bedrooms +" room_id="3room"/> 
+				    </TableViewSection>
+				    <TableViewSection headerTitle="$15000 +" rent_id="above">
+				        <TableViewRow title="2 bedrooms -" room_id="2room"/> 
+				        <TableViewRow title="3 bedrooms +" room_id="3room"/> 
+				    </TableViewSection> 
+				</TableView>
+			</Window>
+		</Tab>
+		<Tab title="Tab 3" icon="KS_nav_views.png">
+			<Window title="Tab 3">
+				<TableView dataCollection="estates" onClick="tab3Click" dataTransform="transformFunctionDistrict">
+				    <TableViewSection headerTitle="{section}">
+				        <TableViewRow title="{Name}"/> 
+				    </TableViewSection>
+				</TableView>
+			</Window>
+		</Tab>
+		<Tab title="Tab 4" icon="KS_nav_views.png" >
+			<Window title="Tab 4">
+				<Module id="mapView" module="ti.map" method="createView" userLocation="true" dataCollection="estates" dataTransform="transformFunctionMap" onClick="mapClick"/>
+   			</Window>
+		</Tab>
+		<Tab title="Tab 5" icon="KS_nav_views.png">
+			<Window title="Tab 5">
+				<Label>Login Page</Label>
+			</Window>
+		</Tab>
+	</TabGroup>
+</Alloy>

@@ -1,0 +1,14 @@
+{
+  "name": "annaxcnl",
+  "version": "1.0.0",
+  "description": "Welcome to your Appcelerator Titanium Mobile Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alloy-sync-sqlrest": "^0.3.4"
+  }
+}
